@@ -1,0 +1,136 @@
+<x-layout title="WensDoc | Global Visas, Attestation & Travel Needs">
+    
+    <!-- Hero Section -->
+    <section class="relative bg-wens-light overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-40 pb-32">
+            <div class="max-w-3xl">
+                <span class="inline-block py-1 px-3 rounded text-wens-green text-sm font-bold tracking-wide mb-6 uppercase border border-wens-green bg-white">
+                    Trusted by 10,000+ Travelers Worldwide
+                </span>
+                <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight text-wens-blue">
+                    Simplifying Your <span class="text-wens-green">Global Visas</span>, Attestation & Travel Needs
+                </h1>
+                <p class="text-xl text-wens-dark mb-10 max-w-2xl leading-relaxed">
+                    Fast, reliable, and expert services since 2017. From Dataflow verification to Umrah visas and worldwide tour packages, we handle the complexity so you don't have to.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="{{ route('services.attestation') }}" class="bg-wens-blue hover:bg-wens-blue-hover text-white px-8 py-4 rounded font-bold text-lg shadow-md transition-all duration-300 flex items-center justify-center text-center">
+                        Explore Services
+                    </a>
+                    <a href="https://wa.me/{{ config('wensdoc.whatsapp_primary') }}?text=Hi%20WensDoc,%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" class="bg-wens-green hover:bg-wens-green-hover text-white px-8 py-4 rounded font-bold text-lg shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group">
+                        Chat on WhatsApp
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-wens-blue mb-4">Our Premium Services</h2>
+                <p class="text-lg text-wens-dark">Comprehensive solutions tailored for your global aspirations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Attestation -->
+                <a href="{{ route('services.attestation') }}" class="group bg-white rounded p-8 border border-gray-100 hover:border-wens-green shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-wens-blue group-hover:bg-wens-green transition-colors"></div>
+                    <div class="w-14 h-14 bg-wens-light text-wens-blue rounded flex items-center justify-center mb-6 group-hover:text-wens-green transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="bg-wens-blue text-white rounded px-2 py-0.5 text-xs font-bold">DOC</span>
+                        <h3 class="text-xl font-bold text-wens-blue">Attestation & Dataflow</h3>
+                    </div>
+                    <p class="text-wens-dark mb-4">Educational, Personal, Commercial Certificate Attestation and Medical PSV Dataflow Verification.</p>
+                    <span class="text-wens-green font-bold flex items-center gap-1 group-hover:translate-x-2 transition-transform">
+                        Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </span>
+                </a>
+
+                <!-- Visas -->
+                <a href="{{ route('services.visa') }}" class="group bg-white rounded p-8 border border-gray-100 hover:border-wens-green shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-wens-blue group-hover:bg-wens-green transition-colors"></div>
+                    <div class="w-14 h-14 bg-wens-light text-wens-blue rounded flex items-center justify-center mb-6 group-hover:text-wens-green transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="bg-wens-blue text-white rounded px-2 py-0.5 text-xs font-bold">VISA</span>
+                        <h3 class="text-xl font-bold text-wens-blue">Global Visas</h3>
+                    </div>
+                    <p class="text-wens-dark mb-4">Umrah Visa, 5-Year UAE/Saudi Multi-Entry, Dubai/Oman/Bahrain/Qatar Tourist & Visit Visas.</p>
+                    <span class="text-wens-green font-bold flex items-center gap-1 group-hover:translate-x-2 transition-transform">
+                        Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </span>
+                </a>
+
+                <!-- Travel -->
+                <a href="{{ route('services.travel') }}" class="group bg-white rounded p-8 border border-gray-100 hover:border-wens-green shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-wens-blue group-hover:bg-wens-green transition-colors"></div>
+                    <div class="w-14 h-14 bg-wens-light text-wens-blue rounded flex items-center justify-center mb-6 group-hover:text-wens-green transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                    </div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="bg-wens-blue text-white rounded px-2 py-0.5 text-xs font-bold">TRAVEL</span>
+                        <h3 class="text-xl font-bold text-wens-blue">Travel & Tours</h3>
+                    </div>
+                    <p class="text-wens-dark mb-4">Worldwide Hotel Bookings, Tour Packages, Domestic & International Flight Ticketing.</p>
+                    <span class="text-wens-green font-bold flex items-center gap-1 group-hover:translate-x-2 transition-transform">
+                        Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-wens-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-wens-blue mb-6">Why Choose <span class="text-wens-green">WensDoc</span>?</h2>
+                    <p class="text-lg text-wens-dark mb-8 leading-relaxed">
+                        With years of industry expertise since 2017, we provide a seamless, hassle-free experience for all your documentation and travel needs. Our dedicated team ensures accuracy, speed, and absolute confidentiality.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center text-wens-green flex-shrink-0 mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-wens-blue">Express Processing</h4>
+                                <p class="text-wens-dark">Fast-tracked verification and visa processing to save your valuable time.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center text-wens-green flex-shrink-0 mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-wens-blue">100% Reliable & Secure</h4>
+                                <p class="text-wens-dark">Your documents are handled with the utmost security and confidentiality.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center text-wens-green flex-shrink-0 mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-wens-blue">Global Expertise</h4>
+                                <p class="text-wens-dark">Specialized knowledge in GCC, Europe, and worldwide travel requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute inset-0 bg-wens-green transform rounded translate-x-4 translate-y-4"></div>
+                    <img src="https://images.unsplash.com/photo-1569098644584-210bcd375b59?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="WensDoc Professional Services" class="rounded shadow-2xl relative z-10 w-full object-cover h-[500px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</x-layout>

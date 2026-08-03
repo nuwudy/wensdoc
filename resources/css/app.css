@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    
+    /* Official WensDoc Custom Color Palette */
+    --color-wens-blue: #005DAE;
+    --color-wens-blue-hover: #004A8B;
+    --color-wens-green: #8DC63F;
+    --color-wens-green-hover: #7AB52D;
+    --color-wens-dark: #333333;
+    --color-wens-light: #F4F7FA;
+
+    /* Gracefully remap existing standard Tailwind classes to the strict brand colors to ensure absolute consistency across the site */
+    --color-blue-600: var(--color-wens-blue);
+    --color-blue-700: var(--color-wens-blue-hover);
+    --color-blue-900: var(--color-wens-blue-hover);
+    --color-blue-950: var(--color-wens-blue-hover);
+    --color-green-500: var(--color-wens-green);
+    --color-green-600: var(--color-wens-green-hover);
+    --color-gray-800: var(--color-wens-dark);
+    --color-gray-900: var(--color-wens-dark);
+    --color-gray-50: var(--color-wens-light);
+    --color-blue-50: var(--color-wens-light);
+}

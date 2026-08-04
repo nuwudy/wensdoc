@@ -3,11 +3,8 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <!-- Brand -->
             <div class="md:col-span-1">
-                <a href="{{ route('home') }}" class="text-3xl font-bold tracking-tight flex items-center gap-2 mb-6">
-                    <div class="bg-wens-blue text-white rounded px-2 py-0.5 text-2xl font-extrabold flex items-center justify-center">
-                        W
-                    </div>
-                    <span class="text-white">WENS<span class="text-wens-green">DOC</span></span>
+                <a href="{{ route('home') }}" class="flex items-center mb-6">
+                    <img src="{{ asset('logo.svg') }}" alt="WensDoc Logo" class="h-10 md:h-12 w-auto">
                 </a>
                 <p class="text-gray-400 text-sm leading-relaxed mb-6">
                     Simplifying your global visas, document attestation, and travel needs with speed, reliability, and expertise since 2017.

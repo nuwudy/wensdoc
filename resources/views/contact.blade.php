@@ -33,8 +33,8 @@
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-wens-blue mb-2">Phone / WhatsApp</h3>
-                            <p class="text-wens-dark mb-1"><a href="tel:+{{ config('wensdoc.whatsapp_primary') }}" class="hover:text-wens-green transition-colors">+{{ config('wensdoc.whatsapp_primary') }}</a> (Primary)</p>
-                            <p class="text-wens-dark"><a href="tel:+{{ config('wensdoc.whatsapp_secondary') }}" class="hover:text-wens-green transition-colors">+{{ config('wensdoc.whatsapp_secondary') }}</a> (Secondary)</p>
+                            <p class="text-wens-dark mb-1"><a href="tel:+{{ config('wensdoc.whatsapp_primary') }}" class="hover:text-wens-green transition-colors">{{ config('wensdoc.whatsapp_primary_display') }}</a> (Primary)</p>
+                            <p class="text-wens-dark"><a href="tel:+{{ config('wensdoc.whatsapp_secondary') }}" class="hover:text-wens-green transition-colors">{{ config('wensdoc.whatsapp_secondary_display') }}</a> (Secondary)</p>
                             
                             <a href="https://wa.me/{{ config('wensdoc.whatsapp_primary') }}" target="_blank" class="mt-4 inline-block text-wens-green font-bold hover:text-wens-green-hover">Chat with us &rarr;</a>
                         </div>

@@ -74,9 +74,9 @@
         <!-- Animated Background Icons -->
         <div class="absolute inset-0 pointer-events-none z-0 block overflow-hidden">
             
-            <!-- 1. Document with Stamp (Top Left) - VISIBLE ON MOBILE -->
-            <div class="absolute top-[10%] left-[2%] md:top-[15%] md:left-[5%] text-wens-blue opacity-30 md:opacity-80 animate-float-slow block">
-                <svg class="w-24 h-24 md:w-32 md:h-32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- 1. Document with Stamp (Top Left) -->
+            <div class="absolute top-[2%] left-[2%] md:top-[15%] md:left-[5%] text-wens-blue opacity-50 md:opacity-80 animate-float-slow block">
+                <svg class="w-20 h-20 md:w-32 md:h-32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                     <polyline points="14 2 14 8 20 8"/>
                     <path d="M16 13H8"/>
@@ -87,9 +87,9 @@
                 </svg>
             </div>
 
-            <!-- 2. Passport (Bottom Left) - HIDDEN ON MOBILE -->
-            <div class="absolute bottom-[10%] left-[8%] text-wens-green opacity-90 animate-float-fast hidden md:block" style="animation-delay: 1s;">
-                <svg class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-15)">
+            <!-- 2. Passport (Bottom Left) -->
+            <div class="absolute bottom-[5%] left-[5%] md:bottom-[10%] md:left-[8%] text-wens-green opacity-50 md:opacity-90 animate-float-fast block" style="animation-delay: 1s;">
+                <svg class="w-20 h-20 md:w-24 md:h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-15)">
                     <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
                     <circle cx="12" cy="10" r="3"/>
                     <path d="M8 18h8"/>
@@ -98,25 +98,25 @@
                 </svg>
             </div>
 
-            <!-- 3. Airplane (Center Right) - VISIBLE ON MOBILE -->
-            <div class="absolute top-[5%] right-[2%] md:top-[25%] md:right-[20%] text-wens-blue opacity-30 md:opacity-85 animate-fly block">
-                <svg class="w-28 h-28 md:w-40 md:h-40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- 3. Airplane (Center Right) -->
+            <div class="absolute top-[5%] right-[2%] md:top-[25%] md:right-[20%] text-wens-blue opacity-50 md:opacity-85 animate-fly block">
+                <svg class="w-20 h-20 md:w-40 md:h-40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
                 </svg>
             </div>
 
-            <!-- 4. Flight Tickets (Far Right) - HIDDEN ON MOBILE -->
-            <div class="absolute top-[40%] right-[5%] text-wens-blue opacity-80 animate-float-slow hidden md:block" style="animation-delay: 2s;">
-                <svg class="w-28 h-28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(15)">
+            <!-- 4. Flight Tickets (Far Right) -->
+            <div class="absolute top-[40%] right-[2%] md:top-[40%] md:right-[5%] text-wens-blue opacity-50 md:opacity-80 animate-float-slow block" style="animation-delay: 2s;">
+                <svg class="w-20 h-20 md:w-28 md:h-28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(15)">
                     <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
                     <path d="M9 5v14" stroke-dasharray="2 2"/>
                     <path d="M13 10l2 2-2 2"/>
                 </svg>
             </div>
             
-            <!-- 5. Approved Badge (Bottom Right) - HIDDEN ON MOBILE -->
-            <div class="absolute bottom-[15%] right-[20%] text-wens-green opacity-90 animate-float-fast hidden md:block" style="animation-delay: 0.5s;">
-                <svg class="w-32 h-32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-10)">
+            <!-- 5. Approved Badge (Bottom Right) -->
+            <div class="absolute bottom-[25%] right-[5%] md:bottom-[15%] md:right-[20%] text-wens-green opacity-50 md:opacity-90 animate-float-fast block" style="animation-delay: 0.5s;">
+                <svg class="w-20 h-20 md:w-32 md:h-32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-10)">
                     <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/>
                     <path d="m9 12 2 2 4-4" stroke-width="2"/>
                 </svg>
@@ -126,7 +126,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-40 pb-32">
             <div class="max-w-3xl">
                 <span class="inline-block py-1 px-3 rounded text-wens-green text-sm font-bold tracking-wide mb-6 uppercase border border-wens-green bg-white">
-                    Trusted by 10,000+ Travelers Worldwide
+                    Trusted by Travelers Worldwide
                 </span>
                 <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight text-wens-blue">
                     Simplifying Your <span class="text-wens-green">Global Visas</span>, Attestation & Travel Needs

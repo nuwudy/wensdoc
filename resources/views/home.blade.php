@@ -2,6 +2,72 @@
     
     <!-- Hero Section -->
     <section class="relative bg-wens-light overflow-hidden">
+        
+        <!-- Custom Animations for Hero -->
+        <style>
+            @keyframes float-slow { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+            @keyframes float-fast { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+            @keyframes fly-diagonal { 0%, 100% { transform: translate(0, 0) rotate(15deg); } 50% { transform: translate(15px, -15px) rotate(15deg); } }
+            @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+            
+            .animate-float-slow { animation: float-slow 4s ease-in-out infinite; }
+            .animate-float-fast { animation: float-fast 2.5s ease-in-out infinite; }
+            .animate-fly { animation: fly-diagonal 3s ease-in-out infinite; }
+            .animate-spin-slow { animation: spin-slow 12s linear infinite; }
+        </style>
+
+        <!-- Animated Background Icons -->
+        <div class="absolute inset-0 pointer-events-none z-0 block overflow-hidden">
+            
+            <!-- 1. Document with Stamp (Top Left) - VISIBLE ON MOBILE -->
+            <div class="absolute top-[10%] left-[2%] md:top-[15%] md:left-[5%] text-wens-blue opacity-30 md:opacity-80 animate-float-slow block">
+                <svg class="w-24 h-24 md:w-32 md:h-32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <path d="M16 13H8"/>
+                    <path d="M16 17H8"/>
+                    <path d="M10 9H8"/>
+                    <circle cx="15" cy="18" r="3" class="text-wens-green" stroke-width="2"/>
+                    <path d="m14.5 17.5 1 1 2-2" class="text-wens-green" stroke-width="2"/>
+                </svg>
+            </div>
+
+            <!-- 2. Passport (Bottom Left) - HIDDEN ON MOBILE -->
+            <div class="absolute bottom-[10%] left-[8%] text-wens-green opacity-90 animate-float-fast hidden md:block" style="animation-delay: 1s;">
+                <svg class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-15)">
+                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                    <circle cx="12" cy="10" r="3"/>
+                    <path d="M8 18h8"/>
+                    <path d="M12 13v2"/>
+                    <path d="M4 6h16"/>
+                </svg>
+            </div>
+
+            <!-- 3. Airplane (Center Right) - VISIBLE ON MOBILE -->
+            <div class="absolute top-[5%] right-[2%] md:top-[25%] md:right-[20%] text-wens-blue opacity-30 md:opacity-85 animate-fly block">
+                <svg class="w-28 h-28 md:w-40 md:h-40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.2-1.1.6L2.5 9l8.1 4.5L7 17H4l-1 1 3 2 2 3 1-1v-3l3.5-3.6 4.5 8.1c.4.4.9.4 1.3 0l2.2-1.2c.4-.3.7-.8.6-1.3z"/>
+                </svg>
+            </div>
+
+            <!-- 4. Flight Tickets (Far Right) - HIDDEN ON MOBILE -->
+            <div class="absolute top-[40%] right-[5%] text-wens-blue opacity-80 animate-float-slow hidden md:block" style="animation-delay: 2s;">
+                <svg class="w-28 h-28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(15)">
+                    <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
+                    <path d="M9 5v14" stroke-dasharray="2 2"/>
+                    <path d="M13 10l2 2-2 2"/>
+                </svg>
+            </div>
+            
+            <!-- 5. Approved Badge (Bottom Right) - HIDDEN ON MOBILE -->
+            <div class="absolute bottom-[15%] right-[20%] text-wens-green opacity-90 animate-float-fast hidden md:block" style="animation-delay: 0.5s;">
+                <svg class="w-32 h-32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-10)">
+                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/>
+                    <path d="m9 12 2 2 4-4" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-40 pb-32">
             <div class="max-w-3xl">
                 <span class="inline-block py-1 px-3 rounded text-wens-green text-sm font-bold tracking-wide mb-6 uppercase border border-wens-green bg-white">

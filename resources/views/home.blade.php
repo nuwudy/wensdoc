@@ -3,18 +3,73 @@
     <!-- Hero Section -->
     <section class="relative bg-wens-light overflow-hidden">
         
-        <!-- Custom Animations for Hero -->
+        <!-- Custom Animations for Hero & Ticker -->
         <style>
             @keyframes float-slow { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
             @keyframes float-fast { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
             @keyframes fly-diagonal { 0%, 100% { transform: translate(0, 0) rotate(15deg); } 50% { transform: translate(15px, -15px) rotate(15deg); } }
             @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+            @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
             
             .animate-float-slow { animation: float-slow 4s ease-in-out infinite; }
             .animate-float-fast { animation: float-fast 2.5s ease-in-out infinite; }
             .animate-fly { animation: fly-diagonal 3s ease-in-out infinite; }
             .animate-spin-slow { animation: spin-slow 12s linear infinite; }
+            .animate-ticker { animation: ticker-scroll 35s linear infinite; display: flex; width: max-content; }
+            .ticker-container:hover .animate-ticker { animation-play-state: paused; }
         </style>
+
+        <!-- Services Ticker -->
+        <div class="bg-wens-blue text-white overflow-hidden py-2.5 relative z-20 shadow-md ticker-container border-b border-wens-green">
+            <div class="animate-ticker text-sm md:text-base tracking-wide font-medium">
+                <!-- Group 1 -->
+                <div class="flex items-center">
+                    <span class="mx-6">✨ Dataflow Verification</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">✈️ Umrah Visas</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🌍 5-Year UAE Multi-Entry Visa</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🛂 Saudi & Dubai Tourist Visas</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">📜 Certificate Attestation</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">✔️ Apostille Services</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🏥 Medical Tourism</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🏨 Hotel Bookings</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🎫 Flight Ticketing</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🌴 Worldwide Tour Packages</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                </div>
+                <!-- Group 2 (Duplicate for seamless loop) -->
+                <div class="flex items-center">
+                    <span class="mx-6">✨ Dataflow Verification</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">✈️ Umrah Visas</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🌍 5-Year UAE Multi-Entry Visa</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🛂 Saudi & Dubai Tourist Visas</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">📜 Certificate Attestation</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">✔️ Apostille Services</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🏥 Medical Tourism</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🏨 Hotel Bookings</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🎫 Flight Ticketing</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                    <span class="mx-6">🌴 Worldwide Tour Packages</span>
+                    <span class="mx-6 text-wens-green">•</span>
+                </div>
+            </div>
+        </div>
 
         <!-- Animated Background Icons -->
         <div class="absolute inset-0 pointer-events-none z-0 block overflow-hidden">

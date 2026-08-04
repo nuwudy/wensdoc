@@ -6,13 +6,27 @@
     <title>{{ $title ?? 'WensDoc | Global Visas, Attestation & Travel Needs' }}</title>
     <meta name="description" content="WensDoc simplifies your global visas, attestation, and travel needs. Expert document verification, medical tourism, and tours worldwide.">
     
+    <!-- Favicon and Touch Icons -->
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="{{ $title ?? 'WensDoc | Global Visas, Attestation & Travel Needs' }}">
+    <meta property="og:description" content="WensDoc simplifies your global visas, attestation, and travel needs. Expert document verification, medical tourism, and tours worldwide.">
+    <meta property="og:image" content="{{ asset('social-share.jpg') }}">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ asset('social-share.jpg') }}">
+
     <!-- Schema Markup for Local SEO -->
     <script type="application/ld+json">
     {
       "@@context": "https://schema.org",
       "@@type": "TravelAgency",
       "name": "WensDoc",
-      "image": "{{ asset('images/logo.png') }}",
+      "image": "{{ asset('logo.svg') }}",
       "email": "{{ config('wensdoc.email') }}",
       "telephone": "+{{ config('wensdoc.whatsapp_primary') }}",
       "address": {

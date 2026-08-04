@@ -23,11 +23,8 @@
         <div class="flex justify-between items-center h-20">
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center">
-                <a href="{{ route('home') }}" class="text-3xl font-bold tracking-tight flex items-center gap-2">
-                    <div class="bg-wens-blue text-white rounded px-2 py-0.5 text-2xl font-extrabold flex items-center justify-center">
-                        W
-                    </div>
-                    <span class="text-wens-blue">WENS<span class="text-wens-green">DOC</span></span>
+                <a href="{{ route('home') }}" class="flex items-center">
+                    <img src="{{ asset('logo.svg') }}" alt="WensDoc Logo" class="h-10 md:h-12 w-auto">
                 </a>
             </div>
 

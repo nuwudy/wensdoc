@@ -45,7 +45,7 @@
 
     <x-header />
 
-    <main class="flex-grow pt-20">
+    <main class="flex-grow pt-20 md:pt-28">
         {{ $slot }}
     </main>
 

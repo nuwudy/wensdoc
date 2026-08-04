@@ -126,7 +126,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-40 pb-32">
             <div class="max-w-3xl">
                 <span class="inline-block py-1 px-3 rounded text-wens-green text-sm font-bold tracking-wide mb-6 uppercase border border-wens-green bg-white">
-                    Trusted by 10,000+ Travelers Worldwide
+                    Trusted by Travelers Worldwide
                 </span>
                 <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight text-wens-blue">
                     Simplifying Your <span class="text-wens-green">Global Visas</span>, Attestation & Travel Needs
